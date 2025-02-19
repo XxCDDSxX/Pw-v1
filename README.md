@@ -1,2 +1,2 @@
 # Pw-v1
-Primera version de un sistema de inscripcion para la materia de "Programacion Web"
+Primera versión de un sistema de inscripción para la materia de **Programación Web**
