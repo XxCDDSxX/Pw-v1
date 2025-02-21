@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --Dark1: #012A4A;
+    --Dark2: #013A63;
+    --Dark3: #01497C;
+    --Dark4: #014F86;
+    --Dark5: #2A6F97;
+    --Light1: #2C7DA0;
+    --Light2: #468FAF;
+    --Light3: #61A5C2;
+    --Light4: #89C2D9;
+    --Light5: #A9D6E5;
+    --White: #e7e7e7;
+}
+.menu{
+    background-color: var(--Dark1);
+}
