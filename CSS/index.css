@@ -16,6 +16,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: "Roboto", serif;
+    background: linear-gradient(175deg, var(--Dark1) 30%, var(--Dark2) 100%);
 }
 main{
     background-image: url(../src/background.svg);
