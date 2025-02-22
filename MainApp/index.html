@@ -10,15 +10,28 @@
     <link rel="stylesheet" href="CSS/sidebar.css"/>
     <link rel="stylesheet" href="CSS/app_layout.css"/>
 
+
 </head>
 <body>
     <div class="workspace">
-        <aside>
-
+        <div id="burger-btn" class="burger-container" onclick="showMenu()"></div>
+        <!--Sidebar-->
+        <aside id="main-sidebar" class="sidebar">
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="#Dashboard">Dashboard</a></li>
+                    <li><a href="#Inscripciones">Inscripciones</a></li>
+                    <li><a href="#Materias">Materias</a></li>
+                    <li><a href="#Solicitudes">Solicitudes</a></li>
+                    <li><a href="Cerrar sesión">Cerrar sesión</a></li>
+                </ul>
+            </nav>
         </aside>
-        <main>
+        <!--Workarea-->
+        <main id="workarea">
     
         </main>
     </div>
 </body>
+<script src="JS/burgerbtn.js"></script>
 </html>

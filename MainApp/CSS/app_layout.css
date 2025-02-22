@@ -24,12 +24,52 @@ body{
     width: 100%;
     height: 100vh;
 }
-aside{
+.workspace>aside{
     background-color: var(--Dark2);
-    width: 300px;
     height: 100%;
+    box-shadow:2px 0px 3px 1px var(--Dark1);
+    z-index: 7;
 }
-main{
+@media only screen and (max-width:600px){
+    .workspace>aside{
+        background-color: var(--Dark2);
+        width: 100%;
+        height: 100%;
+        position:absolute;
+    }
+}
+@media only screen and (min-width:600px){
+    .workspace>aside{
+        background-color: var(--Dark2);
+        width: 350px;
+        height: 100%;
+    }
+}
+.burger-container{
+    background-image: url("../icons/menu_25dp_E7E7E7_FILL0_wght400_GRAD0_opsz24.svg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius:15px;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    background-color: var(--Dark4);
+    box-shadow: 2px 2px 5px 0px var(--Dark1), -2px -2px 5px 0px var(--Dark4);
+    position:fixed;
+    margin-top:10px;
+    margin-left: 15px;
+    z-index: 10;
+}
+.burger-container:hover{
+    background-color: var(--Dark5);
+    cursor: pointer;
+}
+.burger-container:active{
+    background-color: var(--Dark3);
+}
+
+.workspace>main{
     width: 100%;
     height: 100%;
 }
