@@ -25,7 +25,8 @@ body{
     height: 100vh;
 }
 .workspace>aside{
-    background-color: var(--Dark2);
+    /*background-color: var(--Dark2);*/
+    background: linear-gradient(175deg, var(--Dark2) 30%, var(--Dark1) 100%);
     height: 100%;
     box-shadow:2px 0px 3px 1px var(--Dark1);
     z-index: 7;
@@ -54,7 +55,7 @@ body{
     padding: 0;
     width: 40px;
     height: 40px;
-    background-color: var(--Dark4);
+    background-color: var(--Dark2);
     box-shadow: 2px 2px 5px 0px var(--Dark1), -2px -2px 5px 0px var(--Dark4);
     position:fixed;
     margin-top:10px;
@@ -62,7 +63,7 @@ body{
     z-index: 10;
 }
 .burger-container:hover{
-    background-color: var(--Dark5);
+    background-color: var(--Dark3);
     cursor: pointer;
 }
 .burger-container:active{
