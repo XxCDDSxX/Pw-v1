@@ -6,3 +6,8 @@ function showMenu() {
    menu.style.display = sidebar_toggle? 'none': 'inline';
    sidebar_toggle = !sidebar_toggle;
 }
+function refreshSidebar(){
+   if(window.screen.width <= 600 && sidebar_toggle === true){
+      showMenu();
+   }
+}
