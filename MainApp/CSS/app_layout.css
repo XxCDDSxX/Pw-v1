@@ -25,15 +25,16 @@ body{
     height: 100vh;
 }
 .workspace>aside{
-    /*background-color: var(--Dark2);*/
-    background: linear-gradient(175deg, var(--Dark2) 30%, var(--Dark1) 100%);
+    background-color: whitesmoke;
+    box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.5);
+    /*background: linear-gradient(175deg, var(--Dark2) 30%, var(--Dark1) 100%);*/
     height: 100%;
-    box-shadow:2px 0px 3px 1px var(--Dark1);
+    /*box-shadow:2px 0px 3px 1px var(--Dark1);*/
     z-index: 7;
 }
 @media only screen and (max-width:600px){
     .workspace>aside{
-        background-color: var(--Dark2);
+        /*background-color: var(--Dark2);*/
         width: 100%;
         height: 100%;
         position:absolute;
@@ -41,7 +42,7 @@ body{
 }
 @media only screen and (min-width:600px){
     .workspace>aside{
-        background-color: var(--Dark2);
+        /*background-color: var(--Dark2);*/
         width: 350px;
         height: 100%;
     }
@@ -55,8 +56,9 @@ body{
     padding: 0;
     width: 40px;
     height: 40px;
-    background-color: var(--Dark2);
-    box-shadow: 2px 2px 5px 0px var(--Dark1), -2px -2px 5px 0px var(--Dark4);
+    /*background-color: var(--Dark2);*/
+    /*box-shadow: 2px 2px 5px 0px var(--Dark1), -2px -2px 5px 0px var(--Dark4);*/
+    background-color: var(--Dark1);
     position:fixed;
     margin-top:10px;
     margin-left: 15px;
