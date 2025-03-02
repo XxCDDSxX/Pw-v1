@@ -1,16 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
-    --Dark1: #012A4A;
-    --Dark2: #013A63;
-    --Dark3: #01497C;
-    --Dark4: #014F86;
-    --Dark5: #2A6F97;
-    --Light1: #2C7DA0;
-    --Light2: #468FAF;
-    --Light3: #61A5C2;
-    --Light4: #89C2D9;
-    --Light5: #A9D6E5;
-    --White: #e7e7e7;
+    --Dark1: #0D47A1;  /* blue-darken-4 */
+    --Dark2: #1565C0;  /* blue-darken-3 */
+    --Dark3: #1976D2;  /* blue-darken-2 */
+    --Dark4: #1E88E5;  /* blue-darken-1 */
+    --Dark5: #2196F3;  /* blue */
+
+    --Light1: #42A5F5;  /* blue-lighten-1 */
+    --Light2: #64B5F6;  /* blue-lighten-2 */
+    --Light3: #90CAF9;  /* blue-lighten-3 */
+    --Light4: #BBDEFB;  /* blue-lighten-4 */
+    --Light5: #E3F2FD;  /* blue-lighten-5 */
+
+    --Accent1: #82B1FF;  /* blue-accent-1 */
+    --Accent2: #448AFF;  /* blue-accent-2 */
+    --Accent3: #2979FF;  /* blue-accent-3 */
+    --Accent4: #2962FF;  /* blue-accent-4 */
+
+    --White: #ffffff;  /* Un blanco puro */
+    --BlueWhite: #82B1FF; /* Un blanco azulado */
+
 }
 body{
     margin: 0;
