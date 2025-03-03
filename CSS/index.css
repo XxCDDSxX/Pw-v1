@@ -1,102 +1,211 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-:root{
-    --Dark1: #0D47A1;  /* blue-darken-4 */
-    --Dark2: #1565C0;  /* blue-darken-3 */
-    --Dark3: #1976D2;  /* blue-darken-2 */
-    --Dark4: #1E88E5;  /* blue-darken-1 */
-    --Dark5: #2196F3;  /* blue */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --Dark1: #0d47a1; /* blue-darken-4 */
+  --Dark2: #1565c0; /* blue-darken-3 */
+  --Dark3: #1976d2; /* blue-darken-2 */
+  --Dark4: #1e88e5; /* blue-darken-1 */
+  --Dark5: #2196f3; /* blue */
 
-    --Light1: #42A5F5;  /* blue-lighten-1 */
-    --Light2: #64B5F6;  /* blue-lighten-2 */
-    --Light3: #90CAF9;  /* blue-lighten-3 */
-    --Light4: #BBDEFB;  /* blue-lighten-4 */
-    --Light5: #E3F2FD;  /* blue-lighten-5 */
+  --Light1: #42a5f5; /* blue-lighten-1 */
+  --Light2: #64b5f6; /* blue-lighten-2 */
+  --Light3: #90caf9; /* blue-lighten-3 */
+  --Light4: #bbdefb; /* blue-lighten-4 */
+  --Light5: #e3f2fd; /* blue-lighten-5 */
 
-    --Accent1: #82B1FF;  /* blue-accent-1 */
-    --Accent2: #448AFF;  /* blue-accent-2 */
-    --Accent3: #2979FF;  /* blue-accent-3 */
-    --Accent4: #2962FF;  /* blue-accent-4 */
+  --Accent1: #82b1ff; /* blue-accent-1 */
+  --Accent2: #448aff; /* blue-accent-2 */
+  --Accent3: #2979ff; /* blue-accent-3 */
+  --Accent4: #2962ff; /* blue-accent-4 */
 
-    --White: #ffffff;  /* Un blanco puro */
-    --BlueWhite: #82B1FF; /* Un blanco azulado */
-
-}
-body{
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto", serif;
-    background: linear-gradient(175deg, var(--Dark1) 30%, var(--Dark2) 100%);
-}
-main{
-    background-image: url(../src/background.svg);
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container{
-    width: 300px;
-    height: 450px;
-    background: linear-gradient(167deg, var(--Dark2) 0%, var(--Dark3) 35%, var(--Dark4) 100%);
-    border-radius: 15px;
-    box-shadow: 15px 15px 30px rgba(0,0,0,0.5),
-    -15px -15px 30px var(--Dark1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.container>h1{
-    color: var(--Light5);
-    font-size: 28pt;
-    margin-bottom: 0;
-}
-.container>#logoform{
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-form{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  --White: #ffffff; /* Un blanco puro */
+  --BlueWhite: #82b1ff; /* Un blanco azulado */
 }
 
-.field{
-    color:var(--White);
-    font-size: 16pt;
-    font-weight:500;
-    margin-top:5px;
-    margin-bottom: 10px;
-}
-.label{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-}
-.textfield{
-    border: transparent 0;
-    border-radius: 5px;
-    padding: 3px;
-    font-size: 12pt;
-}
-form>button{
-    margin-top: 20px;
-    width: 100%;
-    font-size: 14pt;
-    font-weight: 500;
-    background-color: var(--Light4);
-    color: var(--Dark1);
-    border: transparent 0px;
-    border-radius: 5px;
+.noto-sans-famili {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
-form>button:hover{
-    background-color: var(--Light5);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(175deg, var(--Dark1) 30%, var(--Dark2) 100%);
 }
-form>button:active{
-    background-color: var(--Dark5);
-    color: var(--Light5);
+main {
+  background-image: url(../src/fondo.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 300px;
+  height: 450px;
+  background: linear-gradient(
+    167deg,
+    var(--Dark2) 0%,
+    var(--Dark3) 35%,
+    var(--Dark4) 100%
+  );
+  border-radius: 15px;
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5), -15px -15px 30px var(--Dark1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container > h1 {
+  color: var(--Light5);
+  font-size: 28pt;
+  margin-bottom: 0;
+}
+.container > #logoform {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.field {
+  color: var(--White);
+  font-size: 16pt;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.label {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+.textfield {
+  border: transparent 0;
+  border-radius: 5px;
+  padding: 3px;
+  font-size: 12pt;
+}
+form > button {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 14pt;
+  font-weight: 500;
+  background-color: var(--Light4);
+  color: var(--Dark1);
+  border: transparent 0px;
+  border-radius: 5px;
+}
+
+form > button:hover {
+  background-color: var(--Light5);
+}
+form > button:active {
+  background-color: var(--Dark5);
+  color: var(--Light5);
+}
+
+/*login */
+.form2-box {
+  max-width: fit-content;
+  background: rgba(255, 255, 255, 0.664); /* Fondo semi-transparente */
+  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+
+  overflow: hidden;
+  border-radius: 16px;
+  color: #010101;
+}
+
+.form2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 24px 24px;
+  gap: 16px;
+  text-align: center;
+}
+
+/*Form text*/
+.title {
+  font-weight: 500;
+  font-size: 1.6rem;
+  background-color: #e0ecfb;
+  width: auto;
+  padding: 8px 8px 8px;
+  gap: 8px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #252525;
+}
+
+/*Inputs box*/
+.form2-container {
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 1rem 0 0.5rem;
+  width: 100%;
+}
+
+.input {
+  background: none;
+  border: 0;
+  outline: 0;
+  height: 40px;
+  width: auto; /* Evita que se expanda completamente */
+  max-width: 800px; /* Controla el ancho máximo */
+  border-bottom: 1px solid #eee;
+  font-size: 20px; /* Ajusta el tamaño de fuente */
+  padding: 8px 16px;
+  text-align: left; /* Asegura que el texto quede alineado a la izquierda */
+  display: block; /* Evita que flexbox afecte el tamaño */
+  margin: 0 auto; /* Centra el input dentro del contenedor */
+  box-sizing: border-box;
+}
+
+.form2-section {
+  padding: 16px;
+  font-size: 0.85rem;
+  background-color: #e0ecfb;
+  box-shadow: rgb(0 0 0 / 8%) 0 -1px;
+}
+
+.form2-section a {
+  font-weight: bold;
+  color: #0066ff;
+  transition: color 0.3s ease;
+}
+
+.form2-section a:hover {
+  color: #005ce6;
+  text-decoration: underline;
+}
+
+/*Button*/
+.form2 button {
+  background-color: #0066ff;
+  color: #fff;
+  border: 0;
+  border-radius: 9px;
+  padding: 10px 16px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form2 button:hover {
+  background-color: #005ce6;
 }
