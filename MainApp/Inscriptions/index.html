@@ -6,45 +6,96 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      .main-container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
 </head>
 <body>
-    <div id="carouselExampleDark" class="carousel carousel-dark slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="https://placehold.co/600x400/orange/white" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="https://placehold.co/600x400/black/blue" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://placehold.co/600x400/white/red" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+  <div class="main-container">
+    <div class="card" style="width: 500px;">
+      <div class="card-header" style="background-color: #014F86">
+        <h2 style="color: aliceblue;">Reinscripción</h2>
       </div>
+      <div class="card-body">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Ficha de reinscripción
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <th scope="row">Cuenta CLABE</th>
+                      <td>1234567890123456</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Banco</th>
+                      <td>MoneyBank</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Beneficiario</th>
+                      <td>Una Institucion Pensativa</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Concepto</th>
+                      <td>12345678</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="alert alert-info" role="alert">
+                  Para realizar tu págo recuerda que debe ser antes del <strong>12-12-2033</strong> puede ser en <i>ventanilla, practicajas o transferencia.</i>
+                </div>                
+              </div><!--accordion body-->
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Carga de págo
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="formFile" class="form-label">Ficha de págo en formato PDF</label>
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
+                  <div class="alert alert-info" role="alert">
+                    No se ha realizado un págo todavía o se encuentra en validación.
+                  </div>                  
+                  <button type="submit" class="btn btn-primary">Cargar</button>
+                </form>
+              </div><!--Accordion body-->
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Indicaciones postpago
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p>Su fecha para cargar horario será el día <strong>12-12-2033</strong> en horario de <strong>13:00</strong>. Recuerde estar al pendiente de los canales de difusión para cualquier avíso importante que pueda modificar esta fecha.</p>
+                <a class="btn btn-primary" href="#" role="button">Grupos Disponibles</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
