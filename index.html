@@ -4,6 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="CSS/index.css" />
+  <script lang="javascript">
+    function goToMainApp(){
+      window.location.href = './MainApp/index.html'
+    }
+  </script>
   <body>
     <main>
       
@@ -30,7 +35,7 @@
               placeholder="Clave de acceso"
             />
           </div>
-          <button>Iniciar</button>
+          <button onclick="event.preventDefault(); goToMainApp();">Iniciar</button>
         </form>
         <div class="form2-section">
           <p>¿Perdiste tu clave de acceso? <a href="">Recupérala</a></p>
