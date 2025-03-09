@@ -10,8 +10,6 @@ function setPage(option = 0){
         case 2:
             workarea.setAttribute("src","./Assigments/index.html");
             break;
-        case 3:
-            workarea.setAttribute("src","./Requests/index.html");
     }
     
 }
